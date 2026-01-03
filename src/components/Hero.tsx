@@ -19,7 +19,8 @@ export default function Hero() {
       });
 
       // Prepare Initial States
-      gsap.set([headerRef.current, footerRef.current, contentRef.current], {
+      // gsap.set([headerRef.current, footerRef.current, contentRef.current], {
+      gsap.set([footerRef.current, contentRef.current], {
         opacity: 0,
       });
       gsap.set(headerRef.current, { y: -30 });
@@ -35,15 +36,15 @@ export default function Hero() {
         duration: 2.5,
         ease: "expo.out",
       })
-        .to(
-          headerRef.current,
-          {
-            y: 0,
-            opacity: 1,
-            duration: 1.2,
-          },
-          0.5
-        )
+        // .to(
+        //   headerRef.current,
+        //   {
+        //     y: 0,
+        //     opacity: 1,
+        //     duration: 1.2,
+        //   },
+        //   0.5
+        // )
         .fromTo(
           headlineRef.current?.querySelectorAll(".line-inner") || [],
           {
@@ -132,7 +133,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-8xl">
         {/* Editorial Header / Intro */}
-        <div
+        {/* <div
           ref={headerRef}
           className="mb-6 md:mb-14 flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-silver/5 pb-8"
         >
@@ -161,7 +162,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Headline - Dramatic scale */}
         <h1
@@ -169,20 +170,26 @@ export default function Hero() {
           className="font-heading text-[11vw] md:text-[8.5vw] lg:text-[7.5vw] font-bold leading-[0.85] text-silver tracking-tightest mb-12 md:mb-20"
         >
           <span className="block overflow-hidden pb-1 md:pb-2">
-            <span className="line-inner block">Websites shouldn’t</span>
+            <span className="line-inner block">Full-Stack Developer</span>
           </span>
           <span className="block overflow-hidden pb-1 md:pb-2">
-            <span className="line-inner block">be forgotten. I build</span>
+            <span className="line-inner block">Building Modern</span>
           </span>
           <span className="block line-inner overflow-hidden pb-1 md:pb-2">
-            <span className=" block md:inline italic font-light font-serif pr-6 text-silver/80">
+            {/* <span className=" block md:inline italic font-light font-serif pr-6 text-silver/80">
               the kind
-            </span>
+            </span> */}
             <span className=" block overflow-hidden md:inline">
-              that aren’t.
+              Web Experiences.
             </span>
           </span>
         </h1>
+        {/* <h1
+          ref={headlineRef}
+          className="font-heading text-[11vw] md:text-[8.5vw] lg:text-[7.5vw] font-bold leading-[0.85] text-silver tracking-tightest mb-12 md:mb-20"
+        >
+          Full-Stack Developer Building Modern Web Experiences
+        </h1> */}
 
         <div
           ref={contentRef}
@@ -191,27 +198,37 @@ export default function Hero() {
           {/* Supporting Paragraph */}
           <div className="max-w-xl">
             <p className="text-xl md:text-2xl text-silver/60 font-light leading-relaxed">
-              Synthesizing technical precision with aesthetic authority. I
-              architect refined digital systems that prioritize clarity,
-              typography, and the choreography of motion.
+              I design and develop modern web applications, combining hands-on
+              engineering with AI-assisted workflows to deliver fast, reliable,
+              and scalable solutions.
             </p>
           </div>
 
           {/* Pure Typographic CTAs */}
           <div className="flex flex-col gap-6 pt-2">
             <a
-              href="#projects"
+              href="https://www.linkedin.com/in/umar-abdullah-718169293/"
+              target="_blank"
               className="cta-item-text group flex items-center gap-4 text-xs md:text-sm tracking-[0.3em] font-bold text-silver uppercase transition-all"
             >
               <span className="cta-item-line inline-block w-8 h-px bg-silver/20 transition-all group-hover:w-12 group-hover:bg-silver" />
-              View Selected Work
+              LinkedIn
             </a>
             <a
-              href="/cv.pdf"
-              className="cta-item-text group flex items-center gap-4 text-xs md:text-sm tracking-[0.3em] font-bold text-silver/40 uppercase transition-all hover:text-silver"
+              href="https://github.com/UmarAbdullah79"
+              target="_blank"
+              className="cta-item-text group flex items-center gap-4 text-xs md:text-sm tracking-[0.3em] font-bold text-silver uppercase transition-all"
             >
-              <span className="cta-item-line inline-block w-8 h-px bg-silver/10 transition-all group-hover:w-12 group-hover:bg-silver" />
-              Download Resume
+              <span className="cta-item-line inline-block w-8 h-px bg-silver/20 transition-all group-hover:w-12 group-hover:bg-silver" />
+              Github
+            </a>
+            <a
+              href="/images/Umar-Abdullah-Resume.pdf"
+              target="_blank"
+              className="cta-item-text group flex items-center gap-4 text-xs md:text-sm tracking-[0.3em] font-bold text-silver uppercase transition-all hover:text-silver"
+            >
+              <span className="cta-item-line inline-block w-8 h-px bg-silver/20 transition-all group-hover:w-12 group-hover:bg-silver" />
+              Download CV
             </a>
           </div>
         </div>

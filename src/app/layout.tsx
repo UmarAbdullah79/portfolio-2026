@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import CustomCursor from "@/components/CustomCursor";
 
 export const metadata: Metadata = {
   title: "Umar Abdullah",
@@ -39,6 +40,7 @@ export default function RootLayout({
         className={`${inter.variable} ${cabinetGrotesk.variable} font-sans`}
         suppressHydrationWarning
       >
+        <CustomCursor />
         <Navigation />
         {children}
       </body>
