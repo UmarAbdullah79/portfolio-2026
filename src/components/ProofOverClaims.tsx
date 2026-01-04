@@ -47,13 +47,13 @@ export default function ProofOverClaims() {
       // 1. Clear initial states to ensure visibility if JS fails or ScrollTrigger is slow
       const elementsToAnimate = gsap.utils.toArray([
         headerRef.current?.children,
-        ".project-item"
+        ".project-item",
       ]);
 
       // 2. Setup initial hidden states using gsap.set inside the hook
       gsap.set(elementsToAnimate, {
         opacity: 0,
-        y: 40
+        y: 40,
       });
 
       // 3. Single timeline for the entire section reveal
@@ -63,7 +63,7 @@ export default function ProofOverClaims() {
           start: "top 80%",
           toggleActions: "play none none none",
           once: true,
-        }
+        },
       });
 
       tl.to(elementsToAnimate, {
@@ -107,7 +107,7 @@ export default function ProofOverClaims() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-item group grid grid-cols-1 md:grid-cols-[1fr_1.5fr] py-12 md:py-20 border-b border-white/10 hover:bg-white/[0.02] hover:-translate-y-1.5 transition-all duration-500 ease-in-out px-4 -mx-4 cursor-default"
+              className="project-item group grid grid-cols-1 md:grid-cols-[1fr_1.5fr] py-12 md:py-20 border-b border-white/10 hover:bg-white/2 hover:-translate-y-1.5 transition-all duration-500 ease-in-out px-4 -mx-4 cursor-default"
             >
               {/* Left Column: Project Identity */}
               <div className="mb-8 md:mb-0 space-y-4">

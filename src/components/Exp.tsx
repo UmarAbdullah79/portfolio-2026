@@ -21,19 +21,19 @@ const experiences = [
     ],
     tech: "React, JavaScript, Tailwind CSS, GSAP, Git, Responsive Design, Client Demos, Requirement Analysis",
   },
-  {
-    role: "Freelance Web Developer — Independent Client Projects",
-    company: "Self-Employed",
-    type: "Freelance",
-    period: "December 2025 — Present",
-    bullets: [
-      "Designed and developed complete websites and landing pages for referral-based clients, handled outside core work hours.",
-      "Owned the full project lifecycle, from requirement discussion and design decisions to development, testing, and deployment.",
-      "Delivered responsive, performance-focused websites tailored to client goals and target audiences.",
-      "Managed hosting setup and production deployment, ensuring smooth handover and client satisfaction.",
-    ],
-    tech: "React, JavaScript, Tailwind CSS, GSAP, Git, Hosting & Deployment, Client Communication",
-  },
+  // {
+  //   role: "Freelance Web Developer — Independent Client Projects",
+  //   company: "Self-Employed",
+  //   type: "Freelance",
+  //   period: "December 2025 — Present",
+  //   bullets: [
+  //     "Designed and developed complete websites and landing pages for referral-based clients, handled outside core work hours.",
+  //     "Owned the full project lifecycle, from requirement discussion and design decisions to development, testing, and deployment.",
+  //     "Delivered responsive, performance-focused websites tailored to client goals and target audiences.",
+  //     "Managed hosting setup and production deployment, ensuring smooth handover and client satisfaction.",
+  //   ],
+  //   tech: "React, JavaScript, Tailwind CSS, GSAP, Git, Hosting & Deployment, Client Communication",
+  // },
 ];
 
 export default function Exp() {
@@ -90,7 +90,7 @@ export default function Exp() {
   return (
     <section
       ref={sectionRef}
-      id="experience"
+      id="exp"
       className="py-24 md:py-40 bg-bgBlack text-silver overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">

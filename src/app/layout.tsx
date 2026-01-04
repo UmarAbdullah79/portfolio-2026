@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import CustomCursor from "@/components/CustomCursor";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Umar Abdullah",
@@ -28,7 +29,6 @@ const inter = Inter({
   display: "swap",
 });
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,6 +43,7 @@ export default function RootLayout({
         <CustomCursor />
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );
