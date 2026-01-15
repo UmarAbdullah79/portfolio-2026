@@ -10,6 +10,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
+    title: "The Chopstix",
+    description:
+      "Built an end-to-end restaurant website for Chopstix using Next.js, TypeScript, and Tailwind CSS. Focused on performance optimization, responsive layouts, and scalable UI components, with optimized image handling, smooth scroll-based animations, and SEO-friendly page structure. The project delivers a clean, modern experience optimized for cross-device compatibility and long-term brand scalability.",
+
+    tech: ["Next Js", "Tailwind", "TypeScript", "GSAP"],
+    link: "https://thechopstix.com/",
+    cta: "View Project",
+  },
+  {
     title: "Sai Constructions",
     description:
       "Built a multi-page construction company website featuring services, project highlights, and contact sections. Crafted smooth GSAP-powered hero animations, scroll reveals, and horizontal interactions while maintaining performance and responsiveness across devices. Collaborated closely in a two-member team to deliver a clean, modern interface with strong client approval.",
@@ -23,15 +32,6 @@ const projects = [
       "Modernized a legacy front-end by migrating from HTML & Bootstrap to React and Tailwind, resulting in a more scalable, consistent, and maintainable UI system. Reworked key homepage sections and hero layout to better align with brand identity and modern UX principles. Built modular, reusable components that simplified state management and significantly reduced code complexity, delivering a responsive, production-ready solution as part of a small, fast-moving team.",
     tech: ["React", "GSAP", "JavaScript", "Tailwind CSS"],
     link: "https://iunoware.com/",
-    cta: "View Project",
-  },
-  {
-    title: "Terra Loom",
-    description:
-      "Delivered an end-to-end client website, from layout implementation to deployment. Built SEO-optimized product pages with smooth scrolling, lazy loading, and performance-focused image handling. Enhanced user engagement through subtle animations, form validation, and responsive design, resulting in a polished experience that met performance, SEO, and cross-device standards.",
-
-    tech: ["HTML", "Bootstrap", "JavaScript"],
-    link: "#",
     cta: "View Project",
   },
 ];
