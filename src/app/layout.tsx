@@ -7,7 +7,7 @@ import CustomCursor from "@/components/CustomCursor";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Umar Abdullah",
+  title: "Portfolio Umar Abdullah ",
   description: "Best Software Dev in Madurai",
 };
 

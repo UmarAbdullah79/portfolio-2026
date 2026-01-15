@@ -5,6 +5,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { useGSAP } from "@gsap/react";
 
 import Hero from "@/components/Hero";
+import Hero2 from "@/components/Hero-2";
 import Services from "@/components/Services";
 import ProofOverClaims from "@/components/ProofOverClaims";
 import Exp from "@/components/Exp";
@@ -116,16 +117,12 @@ export default function Home() {
 
       {/* SECTIONS */}
 
+      {/* <Hero2 /> */}
       <Hero />
-
       <Services />
-
       <ProofOverClaims />
-
       <Exp />
-
       <Skills />
-
       <Contact />
     </>
   );
